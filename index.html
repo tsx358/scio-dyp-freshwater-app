@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+  <!-- Railway light -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <br><br>
+  <div class="box">
+    <br>
+    <h1> DYP Freshwater Cards</h1>
+    <div class="flipcard">
+      <div class="flipcard-inner">
+        <div class="flipcard-front">
+          <br>
+          <hr class="hrFront">
+          <p id="questionSide">This is for Science Olympiad Dynamic Planet practice on the Freshwater topic! <br> <br> Click "New Term"; Question/Term appears here. Hover this card to see flipside!</p>
+        </div>
+        <div class="flipcard-back">
+          <br>
+          <hr class="hrBack">
+          <p id="ansSide">Answers/definitions/concepts appears here.</p>
+          <img id="image" src="images/placeholder.png">
+        </div>
+      </div>
+    </div>
+    <br>
+    <button onclick="generate()">New Term</button>
+    <br>
+    <br>
+    <h3>All terms</h3>
+    <p>All terms in the flashcards!</p>
+    <button onclick="toggle()">Show/Hide</button>
+    <div style="display:none;" id="allInfo">
+      <p style="padding:20px;" id="allContext"></p>
+      <script>
+        for (let i=0;i<cardTerms.length;i++){
+          var line=document.getElementById("allContext");
+          line.innerHTML+=cardTerms[i][0]+": "+cardTerms[i][1]+"<br>"
+        }
+      </script>
+    </div>
+    <br> 
+    <br>
+  </div>
+  <p style="font-size: 14px;">Created with html, css, and js.</p>
+
+</body>
+
+</html>
