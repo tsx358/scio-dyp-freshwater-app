@@ -10,7 +10,7 @@ body {
   box-shadow: 5px 5px 8px #D3D3D3, -5px  5px 8px #D3D3D3;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   min-width: 500px; 
   text-align: center;
 }
@@ -101,7 +101,7 @@ button:hover{
 .information{
   font-family: "Raleway",sans-serif; 
   text-align: left;
-  padding: 10px;
+  padding: 20px;
 }
 
 .information img{
