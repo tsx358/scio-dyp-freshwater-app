@@ -1,17 +1,18 @@
 body {
   font-family: 'Raleway', sans-serif;
-  text-align: center;
+
   background-color: #F2F3F4;
 
 }
 
 .box{
   background-color:white;
-  box-shadow: 5px 5px 8px #D3D3D3, -5px -5px 8px #D3D3D3;
+  box-shadow: 5px 5px 8px #D3D3D3, -5px  5px 8px #D3D3D3;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   min-width: 500px; 
+  text-align: center;
 }
 
 .flipcard {
@@ -61,12 +62,12 @@ hr.hrBack{
   border-bottom: 1px solid red;
 }
 
-p{
-  padding: 10px;
+
+.flipcard p{
   font-size: 14px;
 }
 
-img{
+.flipcard img{
   width: auto;
   height: 100px;
   position: absolute;
@@ -95,4 +96,19 @@ button:hover{
 }
 #allInfo{
   line-height: 1.5;
+}
+
+.information{
+  font-family: "Raleway",sans-serif; 
+  text-align: left;
+  padding: 10px;
+}
+
+.information img{
+  height: 100px;
+}
+
+.information p{
+  font-size: 14px;
+  line-height:1.8;
 }
